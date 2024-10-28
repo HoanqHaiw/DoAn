@@ -58,5 +58,11 @@ namespace DoAn
             UpdateDeleteStudent uds = new UpdateDeleteStudent();
             uds.Show();
         }
+
+        private void btnStudentFees_Click(object sender, EventArgs e)
+        {
+            StudentFees snf = new StudentFees();
+            snf.Show();
+        }
     }
 }

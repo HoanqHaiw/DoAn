@@ -239,6 +239,7 @@
             this.btnStudentFees.Size = new System.Drawing.Size(180, 45);
             this.btnStudentFees.TabIndex = 6;
             this.btnStudentFees.Text = "Thanh Toán Phòng";
+            this.btnStudentFees.Click += new System.EventHandler(this.btnStudentFees_Click);
             // 
             // btnUpdateDeleteStudent
             // 
