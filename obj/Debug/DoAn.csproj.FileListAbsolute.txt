@@ -47,3 +47,7 @@ C:\Users\ADMIN\OneDrive\Máy tính\The Worlds\Study with me\DoAn\QLKTX\DoAn\DoAn
 C:\Users\ADMIN\OneDrive\Máy tính\The Worlds\Study with me\DoAn\QLKTX\DoAn\DoAn\obj\Debug\DoAn.csproj.Up2Date
 C:\Users\ADMIN\OneDrive\Máy tính\The Worlds\Study with me\DoAn\QLKTX\DoAn\DoAn\obj\Debug\DoAn.exe
 C:\Users\ADMIN\OneDrive\Máy tính\The Worlds\Study with me\DoAn\QLKTX\DoAn\DoAn\obj\Debug\DoAn.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\The Worlds\Study with me\DoAn\QLKTX\DoAn\DoAn\obj\Debug\DoAn.AllStudentLiving.resources
+C:\Users\ADMIN\OneDrive\Máy tính\The Worlds\Study with me\DoAn\QLKTX\DoAn\DoAn\obj\Debug\DoAn.LeavedStudent.resources
+C:\Users\ADMIN\OneDrive\Máy tính\The Worlds\Study with me\DoAn\QLKTX\DoAn\DoAn\obj\Debug\DoAn.NewEmployee.resources
+C:\Users\ADMIN\OneDrive\Máy tính\The Worlds\Study with me\DoAn\QLKTX\DoAn\DoAn\obj\Debug\DoAn.UpdateDeleteEmployee.resources

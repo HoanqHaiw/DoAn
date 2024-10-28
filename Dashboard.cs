@@ -64,5 +64,29 @@ namespace DoAn
             StudentFees snf = new StudentFees();
             snf.Show();
         }
+
+        private void btnAllStudentLiving_Click(object sender, EventArgs e)
+        {
+            AllStudentLiving asl = new AllStudentLiving();
+            asl.Show();
+        }
+
+        private void btnLeavedStudent_Click(object sender, EventArgs e)
+        {
+            LeavedStudent lsn = new LeavedStudent();
+            lsn.Show();
+        }
+
+        private void btnNewEmployee_Click(object sender, EventArgs e)
+        {
+            NewEmployee ne = new NewEmployee();
+            ne.Show();
+        }
+
+        private void btnUpdateDeleteEmployee_Click(object sender, EventArgs e)
+        {
+            UpdateDeleteEmployee ude = new UpdateDeleteEmployee();
+            ude.Show();
+        }
     }
 }

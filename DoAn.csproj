@@ -55,6 +55,12 @@
     <Compile Include="AddNewRoom.Designer.cs">
       <DependentUpon>AddNewRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllStudentLiving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllStudentLiving.Designer.cs">
+      <DependentUpon>AllStudentLiving.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,18 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="function.cs" />
+    <Compile Include="LeavedStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeavedStudent.Designer.cs">
+      <DependentUpon>LeavedStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewEmployee.Designer.cs">
+      <DependentUpon>NewEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +100,12 @@
     <Compile Include="StudentFees.Designer.cs">
       <DependentUpon>StudentFees.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateDeleteEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateDeleteEmployee.Designer.cs">
+      <DependentUpon>UpdateDeleteEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="UpdateDeleteStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,11 +115,20 @@
     <EmbeddedResource Include="AddNewRoom.resx">
       <DependentUpon>AddNewRoom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AllStudentLiving.resx">
+      <DependentUpon>AllStudentLiving.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeavedStudent.resx">
+      <DependentUpon>LeavedStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewEmployee.resx">
+      <DependentUpon>NewEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewStudent.resx">
       <DependentUpon>NewStudent.cs</DependentUpon>
@@ -112,6 +145,9 @@
     </Compile>
     <EmbeddedResource Include="StudentFees.resx">
       <DependentUpon>StudentFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDeleteEmployee.resx">
+      <DependentUpon>UpdateDeleteEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateDeleteStudent.resx">
       <DependentUpon>UpdateDeleteStudent.cs</DependentUpon>

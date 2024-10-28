@@ -171,6 +171,7 @@
             this.btnUpdateDeleteEmployee.Size = new System.Drawing.Size(180, 45);
             this.btnUpdateDeleteEmployee.TabIndex = 10;
             this.btnUpdateDeleteEmployee.Text = "CN-Xóa - NV";
+            this.btnUpdateDeleteEmployee.Click += new System.EventHandler(this.btnUpdateDeleteEmployee_Click);
             // 
             // btnNewEmployee
             // 
@@ -188,6 +189,7 @@
             this.btnNewEmployee.Size = new System.Drawing.Size(180, 45);
             this.btnNewEmployee.TabIndex = 9;
             this.btnNewEmployee.Text = "Thêm Nhân Viên";
+            this.btnNewEmployee.Click += new System.EventHandler(this.btnNewEmployee_Click);
             // 
             // btnLeavedStudent
             // 
@@ -205,6 +207,7 @@
             this.btnLeavedStudent.Size = new System.Drawing.Size(180, 45);
             this.btnLeavedStudent.TabIndex = 8;
             this.btnLeavedStudent.Text = "SV Trả Phòng";
+            this.btnLeavedStudent.Click += new System.EventHandler(this.btnLeavedStudent_Click);
             // 
             // btnAllStudentLiving
             // 
@@ -222,6 +225,7 @@
             this.btnAllStudentLiving.Size = new System.Drawing.Size(180, 45);
             this.btnAllStudentLiving.TabIndex = 7;
             this.btnAllStudentLiving.Text = "Trạng Thái";
+            this.btnAllStudentLiving.Click += new System.EventHandler(this.btnAllStudentLiving_Click);
             // 
             // btnStudentFees
             // 
