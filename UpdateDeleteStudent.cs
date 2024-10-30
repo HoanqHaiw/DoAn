@@ -97,5 +97,10 @@ namespace DoAn
                 clearAll();
             }
         }
+
+        private void comboxLiving_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

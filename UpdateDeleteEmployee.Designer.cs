@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtMobile = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtFather = new Guna.UI2.WinForms.Guna2TextBox();
@@ -49,27 +47,12 @@
             this.txtDesignation = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtWorking = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnClean = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
+            this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
+            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
-            // 
-            // btnExit
-            // 
-            this.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnExit.FillColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Image = global::DoAn.Properties.Resources.x;
-            this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnExit.Location = new System.Drawing.Point(923, 0);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 45);
-            this.btnExit.TabIndex = 0;
-            this.btnExit.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // label1
             // 
@@ -109,25 +92,6 @@
             this.txtMobile.SelectedText = "";
             this.txtMobile.Size = new System.Drawing.Size(427, 45);
             this.txtMobile.TabIndex = 3;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BorderRadius = 15;
-            this.btnSearch.BorderThickness = 1;
-            this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnSearch.Image = global::DoAn.Properties.Resources.search;
-            this.btnSearch.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSearch.Location = new System.Drawing.Point(720, 92);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(160, 45);
-            this.btnSearch.TabIndex = 4;
-            this.btnSearch.Text = "Tìm Kiếm";
             // 
             // txtName
             // 
@@ -363,23 +327,25 @@
             this.txtWorking.Size = new System.Drawing.Size(233, 36);
             this.txtWorking.TabIndex = 20;
             // 
-            // btnUpdate
+            // btnClean
             // 
-            this.btnUpdate.BorderRadius = 15;
-            this.btnUpdate.BorderThickness = 1;
-            this.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdate.Image = global::DoAn.Properties.Resources.save;
-            this.btnUpdate.Location = new System.Drawing.Point(526, 496);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(108, 45);
-            this.btnUpdate.TabIndex = 21;
-            this.btnUpdate.Text = "Cập Nhật";
+            this.btnClean.BorderRadius = 15;
+            this.btnClean.BorderThickness = 1;
+            this.btnClean.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClean.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClean.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClean.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClean.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnClean.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClean.ForeColor = System.Drawing.Color.Black;
+            this.btnClean.Image = global::DoAn.Properties.Resources.clear;
+            this.btnClean.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnClean.Location = new System.Drawing.Point(772, 496);
+            this.btnClean.Name = "btnClean";
+            this.btnClean.Size = new System.Drawing.Size(108, 45);
+            this.btnClean.TabIndex = 23;
+            this.btnClean.Text = "Clean";
+            this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
             // 
             // btnDelete
             // 
@@ -399,25 +365,63 @@
             this.btnDelete.Size = new System.Drawing.Size(108, 45);
             this.btnDelete.TabIndex = 22;
             this.btnDelete.Text = "Xóa";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // btnClean
+            // btnUpdate
             // 
-            this.btnClean.BorderRadius = 15;
-            this.btnClean.BorderThickness = 1;
-            this.btnClean.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnClean.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnClean.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnClean.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClean.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnClean.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClean.ForeColor = System.Drawing.Color.Black;
-            this.btnClean.Image = global::DoAn.Properties.Resources.clear;
-            this.btnClean.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnClean.Location = new System.Drawing.Point(772, 496);
-            this.btnClean.Name = "btnClean";
-            this.btnClean.Size = new System.Drawing.Size(108, 45);
-            this.btnClean.TabIndex = 23;
-            this.btnClean.Text = "Clean";
+            this.btnUpdate.BorderRadius = 15;
+            this.btnUpdate.BorderThickness = 1;
+            this.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdate.Image = global::DoAn.Properties.Resources.save;
+            this.btnUpdate.Location = new System.Drawing.Point(526, 496);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(108, 45);
+            this.btnUpdate.TabIndex = 21;
+            this.btnUpdate.Text = "Cập Nhật";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BorderRadius = 15;
+            this.btnSearch.BorderThickness = 1;
+            this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.Black;
+            this.btnSearch.Image = global::DoAn.Properties.Resources.search;
+            this.btnSearch.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnSearch.Location = new System.Drawing.Point(720, 92);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(160, 45);
+            this.btnSearch.TabIndex = 4;
+            this.btnSearch.Text = "Tìm Kiếm";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExit.FillColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = global::DoAn.Properties.Resources.x;
+            this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnExit.Location = new System.Drawing.Point(923, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 45);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // UpdateDeleteEmployee
             // 

@@ -88,5 +88,17 @@ namespace DoAn
             UpdateDeleteEmployee ude = new UpdateDeleteEmployee();
             ude.Show();
         }
+
+        private void btnLeavedEmployee_Click(object sender, EventArgs e)
+        {
+            ControlError ce = new ControlError();
+            ce.Show();
+        }
+
+        private void btnAllEmployeeWorking_Click(object sender, EventArgs e)
+        {
+            AllEmployeeWorking asl = new AllEmployeeWorking();
+            asl.Show();
+        }
     }
 }

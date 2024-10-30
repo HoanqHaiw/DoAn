@@ -343,6 +343,7 @@
             this.comboxLiving.Name = "comboxLiving";
             this.comboxLiving.Size = new System.Drawing.Size(566, 36);
             this.comboxLiving.TabIndex = 22;
+            this.comboxLiving.SelectedIndexChanged += new System.EventHandler(this.comboxLiving_SelectedIndexChanged);
             // 
             // btnClear
             // 

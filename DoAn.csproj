@@ -55,11 +55,23 @@
     <Compile Include="AddNewRoom.Designer.cs">
       <DependentUpon>AddNewRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllEmployeeWorking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllEmployeeWorking.Designer.cs">
+      <DependentUpon>AllEmployeeWorking.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllStudentLiving.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AllStudentLiving.Designer.cs">
       <DependentUpon>AllStudentLiving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlError.Designer.cs">
+      <DependentUpon>ControlError.cs</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
@@ -115,8 +127,14 @@
     <EmbeddedResource Include="AddNewRoom.resx">
       <DependentUpon>AddNewRoom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AllEmployeeWorking.resx">
+      <DependentUpon>AllEmployeeWorking.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllStudentLiving.resx">
       <DependentUpon>AllStudentLiving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlError.resx">
+      <DependentUpon>ControlError.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -237,6 +255,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\clear1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

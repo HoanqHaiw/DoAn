@@ -105,5 +105,10 @@ namespace DoAn
             clearAll();
 
         }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

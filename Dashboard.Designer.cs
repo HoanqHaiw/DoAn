@@ -34,7 +34,6 @@
             this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
             this.btnLeavedEmployee = new Guna.UI2.WinForms.Guna2Button();
             this.btnAllEmployeeWorking = new Guna.UI2.WinForms.Guna2Button();
-            this.btnEmployeePayment = new Guna.UI2.WinForms.Guna2Button();
             this.btnUpdateDeleteEmployee = new Guna.UI2.WinForms.Guna2Button();
             this.btnNewEmployee = new Guna.UI2.WinForms.Guna2Button();
             this.btnLeavedStudent = new Guna.UI2.WinForms.Guna2Button();
@@ -52,7 +51,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label1.Location = new System.Drawing.Point(33, 38);
+            this.label1.Location = new System.Drawing.Point(49, 97);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(170, 36);
             this.label1.TabIndex = 0;
@@ -61,11 +60,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label2.Location = new System.Drawing.Point(475, 9);
+            this.label2.Location = new System.Drawing.Point(473, 23);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(282, 36);
+            this.label2.Size = new System.Drawing.Size(349, 42);
             this.label2.TabIndex = 1;
             this.label2.Text = "Quản Lý Kí Túc Xá";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -81,9 +80,9 @@
             this.btnExist.ForeColor = System.Drawing.Color.Black;
             this.btnExist.Image = global::DoAn.Properties.Resources.x;
             this.btnExist.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnExist.Location = new System.Drawing.Point(1062, 9);
+            this.btnExist.Location = new System.Drawing.Point(1091, 0);
             this.btnExist.Name = "btnExist";
-            this.btnExist.Size = new System.Drawing.Size(93, 36);
+            this.btnExist.Size = new System.Drawing.Size(67, 36);
             this.btnExist.TabIndex = 15;
             this.btnExist.Click += new System.EventHandler(this.btnExist_Click);
             // 
@@ -97,7 +96,7 @@
             this.btnLogOut.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.btnLogOut.ForeColor = System.Drawing.Color.Black;
             this.btnLogOut.Image = global::DoAn.Properties.Resources.logout;
-            this.btnLogOut.Location = new System.Drawing.Point(882, 44);
+            this.btnLogOut.Location = new System.Drawing.Point(939, 6);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(155, 30);
             this.btnLogOut.TabIndex = 14;
@@ -115,11 +114,12 @@
             this.btnLeavedEmployee.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLeavedEmployee.ForeColor = System.Drawing.Color.Black;
             this.btnLeavedEmployee.Image = global::DoAn.Properties.Resources.logout1;
-            this.btnLeavedEmployee.Location = new System.Drawing.Point(39, 607);
+            this.btnLeavedEmployee.Location = new System.Drawing.Point(39, 617);
             this.btnLeavedEmployee.Name = "btnLeavedEmployee";
             this.btnLeavedEmployee.Size = new System.Drawing.Size(180, 45);
             this.btnLeavedEmployee.TabIndex = 13;
-            this.btnLeavedEmployee.Text = "NV Thôi Việc";
+            this.btnLeavedEmployee.Text = "Sử Lý Lỗi";
+            this.btnLeavedEmployee.Click += new System.EventHandler(this.btnLeavedEmployee_Click);
             // 
             // btnAllEmployeeWorking
             // 
@@ -132,28 +132,12 @@
             this.btnAllEmployeeWorking.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAllEmployeeWorking.ForeColor = System.Drawing.Color.Black;
             this.btnAllEmployeeWorking.Image = global::DoAn.Properties.Resources.new_student;
-            this.btnAllEmployeeWorking.Location = new System.Drawing.Point(39, 556);
+            this.btnAllEmployeeWorking.Location = new System.Drawing.Point(39, 566);
             this.btnAllEmployeeWorking.Name = "btnAllEmployeeWorking";
             this.btnAllEmployeeWorking.Size = new System.Drawing.Size(180, 45);
             this.btnAllEmployeeWorking.TabIndex = 12;
             this.btnAllEmployeeWorking.Text = "Tất Cả Nhân Viên";
-            // 
-            // btnEmployeePayment
-            // 
-            this.btnEmployeePayment.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnEmployeePayment.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEmployeePayment.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEmployeePayment.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEmployeePayment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEmployeePayment.FillColor = System.Drawing.Color.Transparent;
-            this.btnEmployeePayment.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployeePayment.ForeColor = System.Drawing.Color.Black;
-            this.btnEmployeePayment.Image = global::DoAn.Properties.Resources.Fees1;
-            this.btnEmployeePayment.Location = new System.Drawing.Point(39, 505);
-            this.btnEmployeePayment.Name = "btnEmployeePayment";
-            this.btnEmployeePayment.Size = new System.Drawing.Size(180, 45);
-            this.btnEmployeePayment.TabIndex = 11;
-            this.btnEmployeePayment.Text = "Thanh Toán Lương";
+            this.btnAllEmployeeWorking.Click += new System.EventHandler(this.btnAllEmployeeWorking_Click);
             // 
             // btnUpdateDeleteEmployee
             // 
@@ -166,7 +150,7 @@
             this.btnUpdateDeleteEmployee.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateDeleteEmployee.ForeColor = System.Drawing.Color.Black;
             this.btnUpdateDeleteEmployee.Image = global::DoAn.Properties.Resources.delete2;
-            this.btnUpdateDeleteEmployee.Location = new System.Drawing.Point(39, 454);
+            this.btnUpdateDeleteEmployee.Location = new System.Drawing.Point(39, 506);
             this.btnUpdateDeleteEmployee.Name = "btnUpdateDeleteEmployee";
             this.btnUpdateDeleteEmployee.Size = new System.Drawing.Size(180, 45);
             this.btnUpdateDeleteEmployee.TabIndex = 10;
@@ -184,7 +168,7 @@
             this.btnNewEmployee.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewEmployee.ForeColor = System.Drawing.Color.Black;
             this.btnNewEmployee.Image = global::DoAn.Properties.Resources.Update___Delete_Student3;
-            this.btnNewEmployee.Location = new System.Drawing.Point(39, 403);
+            this.btnNewEmployee.Location = new System.Drawing.Point(39, 455);
             this.btnNewEmployee.Name = "btnNewEmployee";
             this.btnNewEmployee.Size = new System.Drawing.Size(180, 45);
             this.btnNewEmployee.TabIndex = 9;
@@ -202,7 +186,7 @@
             this.btnLeavedStudent.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLeavedStudent.ForeColor = System.Drawing.Color.Black;
             this.btnLeavedStudent.Image = global::DoAn.Properties.Resources.home;
-            this.btnLeavedStudent.Location = new System.Drawing.Point(39, 352);
+            this.btnLeavedStudent.Location = new System.Drawing.Point(39, 404);
             this.btnLeavedStudent.Name = "btnLeavedStudent";
             this.btnLeavedStudent.Size = new System.Drawing.Size(180, 45);
             this.btnLeavedStudent.TabIndex = 8;
@@ -220,7 +204,7 @@
             this.btnAllStudentLiving.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAllStudentLiving.ForeColor = System.Drawing.Color.Black;
             this.btnAllStudentLiving.Image = global::DoAn.Properties.Resources.room;
-            this.btnAllStudentLiving.Location = new System.Drawing.Point(39, 301);
+            this.btnAllStudentLiving.Location = new System.Drawing.Point(39, 353);
             this.btnAllStudentLiving.Name = "btnAllStudentLiving";
             this.btnAllStudentLiving.Size = new System.Drawing.Size(180, 45);
             this.btnAllStudentLiving.TabIndex = 7;
@@ -238,7 +222,7 @@
             this.btnStudentFees.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStudentFees.ForeColor = System.Drawing.Color.Black;
             this.btnStudentFees.Image = global::DoAn.Properties.Resources.Fees;
-            this.btnStudentFees.Location = new System.Drawing.Point(39, 250);
+            this.btnStudentFees.Location = new System.Drawing.Point(39, 302);
             this.btnStudentFees.Name = "btnStudentFees";
             this.btnStudentFees.Size = new System.Drawing.Size(180, 45);
             this.btnStudentFees.TabIndex = 6;
@@ -256,7 +240,7 @@
             this.btnUpdateDeleteStudent.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateDeleteStudent.ForeColor = System.Drawing.Color.Black;
             this.btnUpdateDeleteStudent.Image = global::DoAn.Properties.Resources.Update___Delete_Student2;
-            this.btnUpdateDeleteStudent.Location = new System.Drawing.Point(39, 199);
+            this.btnUpdateDeleteStudent.Location = new System.Drawing.Point(39, 251);
             this.btnUpdateDeleteStudent.Name = "btnUpdateDeleteStudent";
             this.btnUpdateDeleteStudent.Size = new System.Drawing.Size(180, 45);
             this.btnUpdateDeleteStudent.TabIndex = 5;
@@ -274,7 +258,7 @@
             this.btnNewStudent.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewStudent.ForeColor = System.Drawing.Color.Black;
             this.btnNewStudent.Image = global::DoAn.Properties.Resources.all_student_living;
-            this.btnNewStudent.Location = new System.Drawing.Point(39, 148);
+            this.btnNewStudent.Location = new System.Drawing.Point(39, 200);
             this.btnNewStudent.Name = "btnNewStudent";
             this.btnNewStudent.Size = new System.Drawing.Size(180, 45);
             this.btnNewStudent.TabIndex = 4;
@@ -292,7 +276,7 @@
             this.btnManageRooms.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageRooms.ForeColor = System.Drawing.Color.Black;
             this.btnManageRooms.Image = global::DoAn.Properties.Resources.home;
-            this.btnManageRooms.Location = new System.Drawing.Point(39, 97);
+            this.btnManageRooms.Location = new System.Drawing.Point(39, 149);
             this.btnManageRooms.Name = "btnManageRooms";
             this.btnManageRooms.Size = new System.Drawing.Size(180, 45);
             this.btnManageRooms.TabIndex = 3;
@@ -301,7 +285,7 @@
             // 
             // guna2PictureBox1
             // 
-            this.guna2PictureBox1.Image = global::DoAn.Properties.Resources.IMG_0384;
+            this.guna2PictureBox1.Image = global::DoAn.Properties.Resources._21;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(267, 97);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
@@ -320,7 +304,6 @@
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnLeavedEmployee);
             this.Controls.Add(this.btnAllEmployeeWorking);
-            this.Controls.Add(this.btnEmployeePayment);
             this.Controls.Add(this.btnUpdateDeleteEmployee);
             this.Controls.Add(this.btnNewEmployee);
             this.Controls.Add(this.btnLeavedStudent);
@@ -357,10 +340,9 @@
         private Guna.UI2.WinForms.Guna2Button btnLeavedStudent;
         private Guna.UI2.WinForms.Guna2Button btnNewEmployee;
         private Guna.UI2.WinForms.Guna2Button btnUpdateDeleteEmployee;
-        private Guna.UI2.WinForms.Guna2Button btnEmployeePayment;
         private Guna.UI2.WinForms.Guna2Button btnAllEmployeeWorking;
-        private Guna.UI2.WinForms.Guna2Button btnLeavedEmployee;
         private Guna.UI2.WinForms.Guna2Button btnLogOut;
         private Guna.UI2.WinForms.Guna2Button btnExist;
+        private Guna.UI2.WinForms.Guna2Button btnLeavedEmployee;
     }
 }
