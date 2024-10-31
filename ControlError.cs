@@ -46,7 +46,7 @@ namespace DoAn
         public void setDataGrid(Int64 roomNo)
         {
             query = "SELECT issueId, roomNo, description, reportDate, status, employeeInCharge " +
-                    "FROM issues WHERE roomNo = " + roomNo;
+                    "FROM issues WHERE roomNo = " + roomNo+" ";
             DataSet ds = fn.getData(query);
 
             if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
@@ -89,7 +89,7 @@ namespace DoAn
                         "', reportDate = '" + reportDate.ToString("yyyy-MM-dd") +
                         "', status = '" + status +
                         "', employeeInCharge = '" + employeeWork +
-                        "' WHERE issueId = " + errorId;
+                        "' WHERE issueId = " + errorId+"";
 
                 fn.setData(query, "CẬP NHẬT DỮ LIỆU THÀNH CÔNG");
 
@@ -140,6 +140,11 @@ namespace DoAn
             {
                 MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void ComboBoxStatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
