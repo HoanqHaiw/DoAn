@@ -55,6 +55,12 @@
     <Compile Include="AddNewRoom.Designer.cs">
       <DependentUpon>AddNewRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllContract.Designer.cs">
+      <DependentUpon>AllContract.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllEmployeeWorking.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,12 @@
     </Compile>
     <Compile Include="AllStudentLiving.Designer.cs">
       <DependentUpon>AllStudentLiving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contract.Designer.cs">
+      <DependentUpon>Contract.cs</DependentUpon>
     </Compile>
     <Compile Include="ControlError.cs">
       <SubType>Form</SubType>
@@ -91,6 +103,18 @@
     </Compile>
     <Compile Include="LeavedStudent.Designer.cs">
       <DependentUpon>LeavedStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageEmployeee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageEmployeee.Designer.cs">
+      <DependentUpon>ManageEmployeee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manageStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageStudent.Designer.cs">
+      <DependentUpon>manageStudent.cs</DependentUpon>
     </Compile>
     <Compile Include="NewEmployee.cs">
       <SubType>Form</SubType>
@@ -127,11 +151,17 @@
     <EmbeddedResource Include="AddNewRoom.resx">
       <DependentUpon>AddNewRoom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AllContract.resx">
+      <DependentUpon>AllContract.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllEmployeeWorking.resx">
       <DependentUpon>AllEmployeeWorking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllStudentLiving.resx">
       <DependentUpon>AllStudentLiving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contract.resx">
+      <DependentUpon>Contract.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ControlError.resx">
       <DependentUpon>ControlError.cs</DependentUpon>
@@ -144,6 +174,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LeavedStudent.resx">
       <DependentUpon>LeavedStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageEmployeee.resx">
+      <DependentUpon>ManageEmployeee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageStudent.resx">
+      <DependentUpon>manageStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewEmployee.resx">
       <DependentUpon>NewEmployee.cs</DependentUpon>

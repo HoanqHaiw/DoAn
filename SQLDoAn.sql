@@ -1,5 +1,5 @@
 ﻿CREATE DATABASE hostel
-
+use hostel
 
 -- CREATE TABLE ROOMS
 CREATE TABLE rooms (
@@ -47,15 +47,19 @@ CREATE TABLE newEmployee (
 	working VARCHAR(50) DEFAULT 'Yes'
 )
 
+-- CREATE TABLE CONTRACTS (Bảng hợp đồng)
+CREATE TABLE contracts (
+    contractId INT IDENTITY(1,1) PRIMARY KEY,   -- Mã hợp đồng (tự động tăng)
+    studentId INT NOT NULL,                     -- Mã sinh viên (liên kết với bảng newStudent)
+    roomNo BIGINT NOT NULL,                     -- Số phòng (liên kết với bảng rooms)
+    startDate DATE NOT NULL,                    -- Ngày bắt đầu hợp đồng
+    endDate DATE NOT NULL,                      -- Ngày kết thúc hợp đồng
+    rentalAmount BIGINT NOT NULL,               -- Số tiền thuê phòng
+    status VARCHAR(50) DEFAULT 'Active',        -- Trạng thái hợp đồng (Active, Expired, Terminated) đang hoạt động , đã hết hạn và đã chấm dứt
+    FOREIGN KEY (studentId) REFERENCES newStudent(id), -- Liên kết với bảng newStudent
+    FOREIGN KEY (roomNo) REFERENCES rooms(roomNo)      -- Liên kết với bảng rooms
+);
 
-
-
--- CREATE TABLE EMPLOYEESALARY
-CREATE TABLE employeeSalary (
-	mobileNo BIGINT NOT NULL,
-	fmonth VARCHAR(60) NOT NULL,
-	amount BIGINT NOT NULL
-)
 -- CREATE TABLE ISSUES (Sự cố)
 CREATE TABLE issues (
     issueId INT IDENTITY(1,1) PRIMARY KEY,  -- Mã sự cố (tự động tăng)
@@ -65,6 +69,24 @@ CREATE TABLE issues (
     status VARCHAR(100) DEFAULT 'Pending',   -- Trạng thái (Mặc định: Pending)
     employeeInCharge INT NOT NULL,                    -- Nhân viên phụ trách
     -- Khóa ngoại liên kết với bảng rooms và newEmployee
-    FOREIGN KEY (roomNo) REFERENCES rooms(roomNo),
-    FOREIGN KEY (employeeInCharge) REFERENCES newEmployee(id)
+    FOREIGN KEY (roomNo) REFERENCES rooms(roomNo), -- liên kết với bảng rooms
+    FOREIGN KEY (employeeInCharge) REFERENCES newEmployee(id) -- liên kết với bảng newEmployee
 );
+
+
+
+
+SELECT COLUMN_NAME
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'newEmployee';
+
+
+SELECT COLUMN_NAME
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'newStudent';
+
+
+EXEC sp_rename 'newEmployee.employeeInCharge', 'id', 'COLUMN';
+EXEC sp_rename 'newStudent.studentId', 'id', 'COLUMN';
+
+

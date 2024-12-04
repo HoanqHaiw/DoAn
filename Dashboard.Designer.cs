@@ -30,19 +30,15 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnManageStudents = new Guna.UI2.WinForms.Guna2Button();
             this.btnExist = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
             this.btnLeavedEmployee = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAllEmployeeWorking = new Guna.UI2.WinForms.Guna2Button();
-            this.btnUpdateDeleteEmployee = new Guna.UI2.WinForms.Guna2Button();
-            this.btnNewEmployee = new Guna.UI2.WinForms.Guna2Button();
-            this.btnLeavedStudent = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAllStudentLiving = new Guna.UI2.WinForms.Guna2Button();
             this.btnStudentFees = new Guna.UI2.WinForms.Guna2Button();
-            this.btnUpdateDeleteStudent = new Guna.UI2.WinForms.Guna2Button();
-            this.btnNewStudent = new Guna.UI2.WinForms.Guna2Button();
             this.btnManageRooms = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,7 +47,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label1.Location = new System.Drawing.Point(49, 97);
+            this.label1.Location = new System.Drawing.Point(22, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(170, 36);
             this.label1.TabIndex = 0;
@@ -68,6 +64,24 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Quản Lý Kí Túc Xá";
             this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // btnManageStudents
+            // 
+            this.btnManageStudents.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnManageStudents.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnManageStudents.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnManageStudents.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnManageStudents.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnManageStudents.FillColor = System.Drawing.Color.Transparent;
+            this.btnManageStudents.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageStudents.ForeColor = System.Drawing.Color.Black;
+            this.btnManageStudents.Image = global::DoAn.Properties.Resources.new_student;
+            this.btnManageStudents.Location = new System.Drawing.Point(-7, 194);
+            this.btnManageStudents.Name = "btnManageStudents";
+            this.btnManageStudents.Size = new System.Drawing.Size(222, 45);
+            this.btnManageStudents.TabIndex = 16;
+            this.btnManageStudents.Text = "Quản Lý Sinh Viên";
+            this.btnManageStudents.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // btnExist
             // 
@@ -114,102 +128,12 @@
             this.btnLeavedEmployee.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLeavedEmployee.ForeColor = System.Drawing.Color.Black;
             this.btnLeavedEmployee.Image = global::DoAn.Properties.Resources.logout1;
-            this.btnLeavedEmployee.Location = new System.Drawing.Point(39, 617);
+            this.btnLeavedEmployee.Location = new System.Drawing.Point(-7, 617);
             this.btnLeavedEmployee.Name = "btnLeavedEmployee";
             this.btnLeavedEmployee.Size = new System.Drawing.Size(180, 45);
             this.btnLeavedEmployee.TabIndex = 13;
-            this.btnLeavedEmployee.Text = "Sử Lý Lỗi";
+            this.btnLeavedEmployee.Text = "Quản Lý Sự Cố";
             this.btnLeavedEmployee.Click += new System.EventHandler(this.btnLeavedEmployee_Click);
-            // 
-            // btnAllEmployeeWorking
-            // 
-            this.btnAllEmployeeWorking.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnAllEmployeeWorking.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAllEmployeeWorking.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAllEmployeeWorking.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAllEmployeeWorking.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAllEmployeeWorking.FillColor = System.Drawing.Color.Transparent;
-            this.btnAllEmployeeWorking.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAllEmployeeWorking.ForeColor = System.Drawing.Color.Black;
-            this.btnAllEmployeeWorking.Image = global::DoAn.Properties.Resources.new_student;
-            this.btnAllEmployeeWorking.Location = new System.Drawing.Point(39, 566);
-            this.btnAllEmployeeWorking.Name = "btnAllEmployeeWorking";
-            this.btnAllEmployeeWorking.Size = new System.Drawing.Size(180, 45);
-            this.btnAllEmployeeWorking.TabIndex = 12;
-            this.btnAllEmployeeWorking.Text = "Tất Cả Nhân Viên";
-            this.btnAllEmployeeWorking.Click += new System.EventHandler(this.btnAllEmployeeWorking_Click);
-            // 
-            // btnUpdateDeleteEmployee
-            // 
-            this.btnUpdateDeleteEmployee.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnUpdateDeleteEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdateDeleteEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdateDeleteEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdateDeleteEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdateDeleteEmployee.FillColor = System.Drawing.Color.Transparent;
-            this.btnUpdateDeleteEmployee.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateDeleteEmployee.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdateDeleteEmployee.Image = global::DoAn.Properties.Resources.delete2;
-            this.btnUpdateDeleteEmployee.Location = new System.Drawing.Point(39, 506);
-            this.btnUpdateDeleteEmployee.Name = "btnUpdateDeleteEmployee";
-            this.btnUpdateDeleteEmployee.Size = new System.Drawing.Size(180, 45);
-            this.btnUpdateDeleteEmployee.TabIndex = 10;
-            this.btnUpdateDeleteEmployee.Text = "CN-Xóa - NV";
-            this.btnUpdateDeleteEmployee.Click += new System.EventHandler(this.btnUpdateDeleteEmployee_Click);
-            // 
-            // btnNewEmployee
-            // 
-            this.btnNewEmployee.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnNewEmployee.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnNewEmployee.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnNewEmployee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNewEmployee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnNewEmployee.FillColor = System.Drawing.Color.Transparent;
-            this.btnNewEmployee.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewEmployee.ForeColor = System.Drawing.Color.Black;
-            this.btnNewEmployee.Image = global::DoAn.Properties.Resources.Update___Delete_Student3;
-            this.btnNewEmployee.Location = new System.Drawing.Point(39, 455);
-            this.btnNewEmployee.Name = "btnNewEmployee";
-            this.btnNewEmployee.Size = new System.Drawing.Size(180, 45);
-            this.btnNewEmployee.TabIndex = 9;
-            this.btnNewEmployee.Text = "Thêm Nhân Viên";
-            this.btnNewEmployee.Click += new System.EventHandler(this.btnNewEmployee_Click);
-            // 
-            // btnLeavedStudent
-            // 
-            this.btnLeavedStudent.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnLeavedStudent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLeavedStudent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLeavedStudent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLeavedStudent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLeavedStudent.FillColor = System.Drawing.Color.Transparent;
-            this.btnLeavedStudent.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLeavedStudent.ForeColor = System.Drawing.Color.Black;
-            this.btnLeavedStudent.Image = global::DoAn.Properties.Resources.home;
-            this.btnLeavedStudent.Location = new System.Drawing.Point(39, 404);
-            this.btnLeavedStudent.Name = "btnLeavedStudent";
-            this.btnLeavedStudent.Size = new System.Drawing.Size(180, 45);
-            this.btnLeavedStudent.TabIndex = 8;
-            this.btnLeavedStudent.Text = "SV Trả Phòng";
-            this.btnLeavedStudent.Click += new System.EventHandler(this.btnLeavedStudent_Click);
-            // 
-            // btnAllStudentLiving
-            // 
-            this.btnAllStudentLiving.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnAllStudentLiving.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAllStudentLiving.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAllStudentLiving.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAllStudentLiving.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAllStudentLiving.FillColor = System.Drawing.Color.Transparent;
-            this.btnAllStudentLiving.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAllStudentLiving.ForeColor = System.Drawing.Color.Black;
-            this.btnAllStudentLiving.Image = global::DoAn.Properties.Resources.room;
-            this.btnAllStudentLiving.Location = new System.Drawing.Point(39, 353);
-            this.btnAllStudentLiving.Name = "btnAllStudentLiving";
-            this.btnAllStudentLiving.Size = new System.Drawing.Size(180, 45);
-            this.btnAllStudentLiving.TabIndex = 7;
-            this.btnAllStudentLiving.Text = "Trạng Thái";
-            this.btnAllStudentLiving.Click += new System.EventHandler(this.btnAllStudentLiving_Click);
             // 
             // btnStudentFees
             // 
@@ -222,48 +146,12 @@
             this.btnStudentFees.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStudentFees.ForeColor = System.Drawing.Color.Black;
             this.btnStudentFees.Image = global::DoAn.Properties.Resources.Fees;
-            this.btnStudentFees.Location = new System.Drawing.Point(39, 302);
+            this.btnStudentFees.Location = new System.Drawing.Point(12, 301);
             this.btnStudentFees.Name = "btnStudentFees";
             this.btnStudentFees.Size = new System.Drawing.Size(180, 45);
             this.btnStudentFees.TabIndex = 6;
-            this.btnStudentFees.Text = "Thanh Toán Phòng";
+            this.btnStudentFees.Text = "Quản Lý Hóa Đơn";
             this.btnStudentFees.Click += new System.EventHandler(this.btnStudentFees_Click);
-            // 
-            // btnUpdateDeleteStudent
-            // 
-            this.btnUpdateDeleteStudent.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnUpdateDeleteStudent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdateDeleteStudent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdateDeleteStudent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdateDeleteStudent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdateDeleteStudent.FillColor = System.Drawing.Color.Transparent;
-            this.btnUpdateDeleteStudent.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateDeleteStudent.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdateDeleteStudent.Image = global::DoAn.Properties.Resources.Update___Delete_Student2;
-            this.btnUpdateDeleteStudent.Location = new System.Drawing.Point(39, 251);
-            this.btnUpdateDeleteStudent.Name = "btnUpdateDeleteStudent";
-            this.btnUpdateDeleteStudent.Size = new System.Drawing.Size(180, 45);
-            this.btnUpdateDeleteStudent.TabIndex = 5;
-            this.btnUpdateDeleteStudent.Text = "CP-Xóa-SV";
-            this.btnUpdateDeleteStudent.Click += new System.EventHandler(this.btnUpdateDeleteStudent_Click);
-            // 
-            // btnNewStudent
-            // 
-            this.btnNewStudent.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.btnNewStudent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnNewStudent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnNewStudent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnNewStudent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnNewStudent.FillColor = System.Drawing.Color.Transparent;
-            this.btnNewStudent.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewStudent.ForeColor = System.Drawing.Color.Black;
-            this.btnNewStudent.Image = global::DoAn.Properties.Resources.all_student_living;
-            this.btnNewStudent.Location = new System.Drawing.Point(39, 200);
-            this.btnNewStudent.Name = "btnNewStudent";
-            this.btnNewStudent.Size = new System.Drawing.Size(180, 45);
-            this.btnNewStudent.TabIndex = 4;
-            this.btnNewStudent.Text = "Thêm Sinh Viên";
-            this.btnNewStudent.Click += new System.EventHandler(this.btnNewStudent_Click);
             // 
             // btnManageRooms
             // 
@@ -276,7 +164,7 @@
             this.btnManageRooms.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageRooms.ForeColor = System.Drawing.Color.Black;
             this.btnManageRooms.Image = global::DoAn.Properties.Resources.home;
-            this.btnManageRooms.Location = new System.Drawing.Point(39, 149);
+            this.btnManageRooms.Location = new System.Drawing.Point(12, 97);
             this.btnManageRooms.Name = "btnManageRooms";
             this.btnManageRooms.Size = new System.Drawing.Size(180, 45);
             this.btnManageRooms.TabIndex = 3;
@@ -294,23 +182,55 @@
             this.guna2PictureBox1.TabIndex = 2;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.Image = global::DoAn.Properties.Resources.new_student;
+            this.guna2Button1.Location = new System.Drawing.Point(-7, 395);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(221, 45);
+            this.guna2Button1.TabIndex = 17;
+            this.guna2Button1.Text = "Quản Lý Nhân Viên";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button2.Image = global::DoAn.Properties.Resources.save;
+            this.guna2Button2.Location = new System.Drawing.Point(12, 522);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button2.TabIndex = 18;
+            this.guna2Button2.Text = "Quản Lý Hợp Đồng";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.ClientSize = new System.Drawing.Size(1158, 674);
+            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.btnManageStudents);
             this.Controls.Add(this.btnExist);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnLeavedEmployee);
-            this.Controls.Add(this.btnAllEmployeeWorking);
-            this.Controls.Add(this.btnUpdateDeleteEmployee);
-            this.Controls.Add(this.btnNewEmployee);
-            this.Controls.Add(this.btnLeavedStudent);
-            this.Controls.Add(this.btnAllStudentLiving);
             this.Controls.Add(this.btnStudentFees);
-            this.Controls.Add(this.btnUpdateDeleteStudent);
-            this.Controls.Add(this.btnNewStudent);
             this.Controls.Add(this.btnManageRooms);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.label2);
@@ -333,16 +253,12 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnManageRooms;
-        private Guna.UI2.WinForms.Guna2Button btnNewStudent;
-        private Guna.UI2.WinForms.Guna2Button btnUpdateDeleteStudent;
         private Guna.UI2.WinForms.Guna2Button btnStudentFees;
-        private Guna.UI2.WinForms.Guna2Button btnAllStudentLiving;
-        private Guna.UI2.WinForms.Guna2Button btnLeavedStudent;
-        private Guna.UI2.WinForms.Guna2Button btnNewEmployee;
-        private Guna.UI2.WinForms.Guna2Button btnUpdateDeleteEmployee;
-        private Guna.UI2.WinForms.Guna2Button btnAllEmployeeWorking;
         private Guna.UI2.WinForms.Guna2Button btnLogOut;
         private Guna.UI2.WinForms.Guna2Button btnExist;
         private Guna.UI2.WinForms.Guna2Button btnLeavedEmployee;
+        private Guna.UI2.WinForms.Guna2Button btnManageStudents;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }

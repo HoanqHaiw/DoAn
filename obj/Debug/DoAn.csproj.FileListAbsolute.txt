@@ -53,3 +53,7 @@ C:\Users\ADMIN\OneDrive\Máy tính\The Worlds\Study with me\DoAn\QLKTX\DoAn\DoAn
 C:\Users\ADMIN\OneDrive\Máy tính\The Worlds\Study with me\DoAn\QLKTX\DoAn\DoAn\obj\Debug\DoAn.UpdateDeleteEmployee.resources
 C:\Users\ADMIN\OneDrive\Máy tính\The Worlds\Study with me\DoAn\QLKTX\DoAn\DoAn\obj\Debug\DoAn.ControlError.resources
 C:\Users\ADMIN\OneDrive\Máy tính\The Worlds\Study with me\DoAn\QLKTX\DoAn\DoAn\obj\Debug\DoAn.AllEmployeeWorking.resources
+C:\Users\ADMIN\OneDrive\Máy tính\The Worlds\Study with me\DoAn\QLKTX\DoAn\DoAn\obj\Debug\DoAn.manageStudent.resources
+C:\Users\ADMIN\OneDrive\Máy tính\The Worlds\Study with me\DoAn\QLKTX\DoAn\DoAn\obj\Debug\DoAn.ManageEmployeee.resources
+C:\Users\ADMIN\OneDrive\Máy tính\The Worlds\Study with me\DoAn\QLKTX\DoAn\DoAn\obj\Debug\DoAn.Contract.resources
+C:\Users\ADMIN\OneDrive\Máy tính\The Worlds\Study with me\DoAn\QLKTX\DoAn\DoAn\obj\Debug\DoAn.AllContract.resources

@@ -362,7 +362,7 @@
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(138, 45);
             this.btnClear.TabIndex = 25;
-            this.btnClear.Text = "Clear";
+            this.btnClear.Text = "Hoàn Tác";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnDelete

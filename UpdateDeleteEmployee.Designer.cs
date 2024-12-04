@@ -344,7 +344,7 @@
             this.btnClean.Name = "btnClean";
             this.btnClean.Size = new System.Drawing.Size(108, 45);
             this.btnClean.TabIndex = 23;
-            this.btnClean.Text = "Clean";
+            this.btnClean.Text = "Hoàn Tác";
             this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
             // 
             // btnDelete

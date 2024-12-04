@@ -49,8 +49,8 @@ namespace DoAn
 
         private void btnNewStudent_Click(object sender, EventArgs e)
         {
-            NewStudent nst = new NewStudent();
-            nst.Show();
+           // NewStudent nst = new NewStudent();
+            //nst.Show();
         }
 
         private void btnUpdateDeleteStudent_Click(object sender, EventArgs e)
@@ -99,6 +99,24 @@ namespace DoAn
         {
             AllEmployeeWorking asl = new AllEmployeeWorking();
             asl.Show();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            manageStudent mst = new manageStudent();
+            mst.Show();
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            ManageEmployeee me = new ManageEmployeee();
+            me.Show();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Contract ct = new Contract();
+            ct.Show();
         }
     }
 }

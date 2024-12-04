@@ -296,7 +296,7 @@
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(139, 45);
             this.btnClear.TabIndex = 16;
-            this.btnClear.Text = "Clear";
+            this.btnClear.Text = "Xóa";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // guna2DataGridView1
