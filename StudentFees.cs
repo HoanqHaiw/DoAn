@@ -110,5 +110,11 @@ namespace DoAn
         {
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            AllFees ae = new AllFees();
+            ae.Show();
+        }
     }
 }

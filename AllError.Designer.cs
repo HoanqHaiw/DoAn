@@ -1,6 +1,6 @@
 ﻿namespace DoAn
 {
-    partial class LeavedStudent
+    partial class AllError
     {
         /// <summary>
         /// Required designer variable.
@@ -31,11 +31,21 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(305, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(422, 36);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Xem Danh Sách Các Sự Cố";
             // 
             // btnExit
             // 
@@ -48,21 +58,11 @@
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = global::DoAn.Properties.Resources.x;
             this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnExit.Location = new System.Drawing.Point(937, 1);
+            this.btnExit.Location = new System.Drawing.Point(922, 0);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(61, 45);
-            this.btnExit.TabIndex = 0;
+            this.btnExit.Size = new System.Drawing.Size(75, 45);
+            this.btnExit.TabIndex = 26;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(29, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(341, 36);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Sinh Viên Trả Phòng";
             // 
             // guna2DataGridView1
             // 
@@ -87,13 +87,13 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(35, 98);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(35, 65);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 24;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(925, 475);
-            this.guna2DataGridView1.TabIndex = 2;
+            this.guna2DataGridView1.Size = new System.Drawing.Size(932, 507);
+            this.guna2DataGridView1.TabIndex = 27;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
@@ -115,21 +115,20 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
-            // LeavedStudent
+            // AllError
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(998, 604);
             this.Controls.Add(this.guna2DataGridView1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "LeavedStudent";
-            this.Text = "LeavedStudent";
-            this.Load += new System.EventHandler(this.LeavedStudent_Load);
+            this.Name = "AllError";
+            this.Text = "LookError";
+            this.Load += new System.EventHandler(this.AllError_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -138,8 +137,8 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Button btnExit;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button btnExit;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
     }
 }

@@ -1,5 +1,4 @@
-﻿using Guna.UI2.WinForms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,11 +10,11 @@ using System.Windows.Forms;
 
 namespace DoAn
 {
-    public partial class AllContract : Form
+    public partial class AllFees : Form
     {
         function fn = new function();
         String query;
-        public AllContract()
+        public AllFees()
         {
             InitializeComponent();
         }
@@ -25,16 +24,12 @@ namespace DoAn
             this.Close();
         }
 
-        private void AllContract_Load(object sender, EventArgs e)
+        private void AllFees_Load(object sender, EventArgs e)
         {
             this.Location = new Point(267, 97);
-            string query = "SELECT * FROM contracts";
+            string query = "SELECT * FROM fees";
             DataSet ds = fn.getData(query);
             guna2DataGridView1.DataSource = ds.Tables[0];
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
         }
     }
 }

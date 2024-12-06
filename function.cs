@@ -11,12 +11,13 @@ namespace DoAn
 {
     internal class function
     {
-        protected SqlConnection getConnection() { 
+        protected SqlConnection getConnection()
+        {
             SqlConnection con = new SqlConnection();
             con.ConnectionString = " Data Source=LAPTOP-HAI\\SQLEXPRESS01;database=hostel;Integrated Security=True";
             return con;
         }
-        public DataSet getData(String query) 
+        public DataSet getData(String query)
         {
             SqlConnection con = getConnection();
             SqlCommand cmd = new SqlCommand();
@@ -27,7 +28,8 @@ namespace DoAn
             da.Fill(ds);
             return ds;
         }
-        public void setData(String query,String msg) {
+        public void setData(String query, String msg)
+        {
             SqlConnection con = getConnection();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
@@ -35,7 +37,7 @@ namespace DoAn
             cmd.CommandText = query;
             cmd.ExecuteNonQuery();
             con.Close();
-            MessageBox.Show(msg,"THÔNG TIN",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            MessageBox.Show(msg, "THÔNG TIN", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

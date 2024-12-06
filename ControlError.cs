@@ -146,6 +146,12 @@ namespace DoAn
         {
 
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            AllError ae = new AllError();
+            ae.Show();
+        }
     }
 }
     

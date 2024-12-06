@@ -100,7 +100,7 @@ namespace DoAn
             }
             else
             {
-                status = "No";
+                status = "NO";
             }
             query =  " update rooms set roomStatus = '" + status + "' where roomNo = " +txtRoomNo2.Text + "";
             fn.setData(query,"CẬP NHẬT THÀNH CÔNG!");

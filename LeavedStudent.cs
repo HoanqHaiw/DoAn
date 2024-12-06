@@ -27,9 +27,14 @@ namespace DoAn
         private void LeavedStudent_Load(object sender, EventArgs e)
         {
             this.Location = new Point(267, 97);
-            query = "SELECT * FROM newStudent WHERE living = 'No'";
+            query = "SELECT * FROM newStudent WHERE living = 'NO'";
             DataSet ds = fn.getData(query);
             guna2DataGridView1.DataSource = ds.Tables[0];
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -176,7 +176,9 @@
             this.Controls.Add(this.btnNewStudent);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "manageStudent";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage Students";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.manageStudent_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

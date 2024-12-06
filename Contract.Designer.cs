@@ -36,16 +36,16 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtErrorId = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.txtContractId = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtStudentId = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtRentAmount = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dtpStartDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.dtpEndDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.ComboBoxStatus = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAddContract = new Guna.UI2.WinForms.Guna2Button();
+            this.cbRoomNumbers = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -129,109 +129,92 @@
             this.label8.TabIndex = 10;
             this.label8.Text = "Trạng Thái Phòng";
             // 
-            // txtErrorId
+            // txtContractId
             // 
-            this.txtErrorId.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtErrorId.DefaultText = "";
-            this.txtErrorId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtErrorId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtErrorId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtErrorId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtErrorId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtErrorId.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtErrorId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtErrorId.Location = new System.Drawing.Point(255, 71);
-            this.txtErrorId.Name = "txtErrorId";
-            this.txtErrorId.PasswordChar = '\0';
-            this.txtErrorId.PlaceholderText = "";
-            this.txtErrorId.SelectedText = "";
-            this.txtErrorId.Size = new System.Drawing.Size(427, 45);
-            this.txtErrorId.TabIndex = 11;
+            this.txtContractId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtContractId.DefaultText = "";
+            this.txtContractId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtContractId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtContractId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtContractId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtContractId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtContractId.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtContractId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtContractId.Location = new System.Drawing.Point(255, 71);
+            this.txtContractId.Name = "txtContractId";
+            this.txtContractId.PasswordChar = '\0';
+            this.txtContractId.PlaceholderText = "";
+            this.txtContractId.SelectedText = "";
+            this.txtContractId.Size = new System.Drawing.Size(427, 45);
+            this.txtContractId.TabIndex = 11;
             // 
-            // guna2TextBox1
+            // txtStudentId
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(255, 141);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(427, 45);
-            this.guna2TextBox1.TabIndex = 12;
+            this.txtStudentId.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtStudentId.DefaultText = "";
+            this.txtStudentId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtStudentId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtStudentId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStudentId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtStudentId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStudentId.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtStudentId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtStudentId.Location = new System.Drawing.Point(255, 141);
+            this.txtStudentId.Name = "txtStudentId";
+            this.txtStudentId.PasswordChar = '\0';
+            this.txtStudentId.PlaceholderText = "";
+            this.txtStudentId.SelectedText = "";
+            this.txtStudentId.Size = new System.Drawing.Size(427, 45);
+            this.txtStudentId.TabIndex = 12;
             // 
-            // guna2TextBox2
+            // txtRentAmount
             // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(255, 208);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(427, 45);
-            this.guna2TextBox2.TabIndex = 13;
+            this.txtRentAmount.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRentAmount.DefaultText = "";
+            this.txtRentAmount.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtRentAmount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtRentAmount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRentAmount.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRentAmount.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRentAmount.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtRentAmount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRentAmount.Location = new System.Drawing.Point(255, 446);
+            this.txtRentAmount.Name = "txtRentAmount";
+            this.txtRentAmount.PasswordChar = '\0';
+            this.txtRentAmount.PlaceholderText = "";
+            this.txtRentAmount.SelectedText = "";
+            this.txtRentAmount.Size = new System.Drawing.Size(427, 45);
+            this.txtRentAmount.TabIndex = 14;
             // 
-            // guna2TextBox3
+            // dtpStartDate
             // 
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(255, 446);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(427, 45);
-            this.guna2TextBox3.TabIndex = 14;
+            this.dtpStartDate.Checked = true;
+            this.dtpStartDate.FillColor = System.Drawing.Color.White;
+            this.dtpStartDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpStartDate.Location = new System.Drawing.Point(255, 268);
+            this.dtpStartDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpStartDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpStartDate.Name = "dtpStartDate";
+            this.dtpStartDate.Size = new System.Drawing.Size(427, 36);
+            this.dtpStartDate.TabIndex = 15;
+            this.dtpStartDate.Value = new System.DateTime(2024, 12, 4, 20, 20, 28, 362);
+            this.dtpStartDate.ValueChanged += new System.EventHandler(this.guna2DateTimePicker1_ValueChanged);
             // 
-            // guna2DateTimePicker1
+            // dtpEndDate
             // 
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(255, 268);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(427, 36);
-            this.guna2DateTimePicker1.TabIndex = 15;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 12, 4, 20, 20, 28, 362);
-            // 
-            // guna2DateTimePicker2
-            // 
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(255, 354);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(427, 36);
-            this.guna2DateTimePicker2.TabIndex = 16;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2024, 12, 4, 20, 20, 28, 362);
+            this.dtpEndDate.Checked = true;
+            this.dtpEndDate.FillColor = System.Drawing.Color.White;
+            this.dtpEndDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpEndDate.Location = new System.Drawing.Point(255, 354);
+            this.dtpEndDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpEndDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpEndDate.Name = "dtpEndDate";
+            this.dtpEndDate.Size = new System.Drawing.Size(427, 36);
+            this.dtpEndDate.TabIndex = 16;
+            this.dtpEndDate.Value = new System.DateTime(2024, 12, 4, 20, 20, 28, 362);
+            this.dtpEndDate.ValueChanged += new System.EventHandler(this.guna2DateTimePicker2_ValueChanged);
             // 
             // ComboBoxStatus
             // 
@@ -244,9 +227,8 @@
             this.ComboBoxStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.ComboBoxStatus.ItemHeight = 30;
             this.ComboBoxStatus.Items.AddRange(new object[] {
-            "Đang hoạt động",
-            "Đã Hết Hạn",
-            "Đã Chấm Dứt"});
+            "Còn Trống",
+            "Đã Cho Thuê"});
             this.ComboBoxStatus.Location = new System.Drawing.Point(255, 529);
             this.ComboBoxStatus.Name = "ComboBoxStatus";
             this.ComboBoxStatus.Size = new System.Drawing.Size(427, 36);
@@ -289,24 +271,34 @@
             this.btnExit.TabIndex = 29;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // btnSearch
+            // btnAddContract
             // 
-            this.btnSearch.BorderRadius = 15;
-            this.btnSearch.BorderThickness = 1;
-            this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI Symbol", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnSearch.Image = global::DoAn.Properties.Resources.home;
-            this.btnSearch.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSearch.Location = new System.Drawing.Point(725, 185);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(190, 45);
-            this.btnSearch.TabIndex = 28;
-            this.btnSearch.Text = "Thêm";
+            this.btnAddContract.BorderRadius = 15;
+            this.btnAddContract.BorderThickness = 1;
+            this.btnAddContract.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddContract.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddContract.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddContract.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddContract.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnAddContract.Font = new System.Drawing.Font("Segoe UI Symbol", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddContract.ForeColor = System.Drawing.Color.Black;
+            this.btnAddContract.Image = global::DoAn.Properties.Resources.home;
+            this.btnAddContract.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnAddContract.Location = new System.Drawing.Point(725, 185);
+            this.btnAddContract.Name = "btnAddContract";
+            this.btnAddContract.Size = new System.Drawing.Size(190, 45);
+            this.btnAddContract.TabIndex = 28;
+            this.btnAddContract.Text = "Thêm";
+            this.btnAddContract.Click += new System.EventHandler(this.btnAddContract_Click);
+            // 
+            // cbRoomNumbers
+            // 
+            this.cbRoomNumbers.FormattingEnabled = true;
+            this.cbRoomNumbers.Location = new System.Drawing.Point(255, 205);
+            this.cbRoomNumbers.Name = "cbRoomNumbers";
+            this.cbRoomNumbers.Size = new System.Drawing.Size(427, 24);
+            this.cbRoomNumbers.TabIndex = 31;
+            this.cbRoomNumbers.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // Contract
             // 
@@ -314,16 +306,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(998, 604);
+            this.Controls.Add(this.cbRoomNumbers);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.btnAddContract);
             this.Controls.Add(this.ComboBoxStatus);
-            this.Controls.Add(this.guna2DateTimePicker2);
-            this.Controls.Add(this.guna2DateTimePicker1);
-            this.Controls.Add(this.guna2TextBox3);
-            this.Controls.Add(this.guna2TextBox2);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.txtErrorId);
+            this.Controls.Add(this.dtpEndDate);
+            this.Controls.Add(this.dtpStartDate);
+            this.Controls.Add(this.txtRentAmount);
+            this.Controls.Add(this.txtStudentId);
+            this.Controls.Add(this.txtContractId);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -335,6 +327,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Contract";
             this.Text = "Contract";
+            this.Load += new System.EventHandler(this.Contract_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -350,15 +343,15 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2TextBox txtErrorId;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
+        private Guna.UI2.WinForms.Guna2TextBox txtContractId;
+        private Guna.UI2.WinForms.Guna2TextBox txtStudentId;
+        private Guna.UI2.WinForms.Guna2TextBox txtRentAmount;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpStartDate;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpEndDate;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBoxStatus;
-        private Guna.UI2.WinForms.Guna2Button btnSearch;
+        private Guna.UI2.WinForms.Guna2Button btnAddContract;
         private Guna.UI2.WinForms.Guna2Button btnExit;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.ComboBox cbRoomNumbers;
     }
 }

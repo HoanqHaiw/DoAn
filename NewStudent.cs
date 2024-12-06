@@ -69,7 +69,7 @@ namespace DoAn
                 Int64 roomNo = Int64.Parse(comboRoomNo.Text);
 
 
-                query = "insert into newStudent(mobile, name, fname, mname, email, paddress, college, idproof, roomNo) values (" + mobile + ",'" +name+ "', '" + fname + "','" +mname + "','" +email +"','" +paddress+ "','" +colege+ "','" +idproof+ "', " +roomNo+ ") update rooms set Booked = 'YES' where roomNo = " +roomNo+""; // thêm vào từng trường mà mình vừa khai báo ở trên và update lại cái trạng thái phòng
+                query = "insert into newStudent(mobile, name, fname, mname, email, paddress, college, idproof, roomNo) values (" + mobile + ",'" +name+ "', '" + fname + "','" +mname + "','" +email +"','" +paddress+ "','" +colege+ "','" +idproof+ "', " +roomNo+ ") update rooms set Booked = 'CO' where roomNo = " +roomNo+""; // thêm vào từng trường mà mình vừa khai báo ở trên và update lại cái trạng thái phòng
                 fn.setData(query,"Sinh Viên Đăng Kí Thành Công");
                 clearAll();
             }

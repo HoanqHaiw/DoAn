@@ -67,6 +67,12 @@
     <Compile Include="AllEmployeeWorking.Designer.cs">
       <DependentUpon>AllEmployeeWorking.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllFees.Designer.cs">
+      <DependentUpon>AllFees.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllStudentLiving.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,12 @@
     </Compile>
     <Compile Include="LeavedStudent.Designer.cs">
       <DependentUpon>LeavedStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllError.Designer.cs">
+      <DependentUpon>AllError.cs</DependentUpon>
     </Compile>
     <Compile Include="ManageEmployeee.cs">
       <SubType>Form</SubType>
@@ -157,6 +169,9 @@
     <EmbeddedResource Include="AllEmployeeWorking.resx">
       <DependentUpon>AllEmployeeWorking.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AllFees.resx">
+      <DependentUpon>AllFees.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllStudentLiving.resx">
       <DependentUpon>AllStudentLiving.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LeavedStudent.resx">
       <DependentUpon>LeavedStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllError.resx">
+      <DependentUpon>AllError.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageEmployeee.resx">
       <DependentUpon>ManageEmployeee.cs</DependentUpon>

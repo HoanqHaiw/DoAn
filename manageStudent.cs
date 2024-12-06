@@ -40,7 +40,7 @@ namespace DoAn
 
         private void manageStudent_Load(object sender, EventArgs e)
         {
-
+            this.Location = new Point(267, 97);
         }
 
         private void btnUpdateDeleteStudent_Click(object sender, EventArgs e)

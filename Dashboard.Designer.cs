@@ -94,7 +94,7 @@
             this.btnExist.ForeColor = System.Drawing.Color.Black;
             this.btnExist.Image = global::DoAn.Properties.Resources.x;
             this.btnExist.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnExist.Location = new System.Drawing.Point(1091, 0);
+            this.btnExist.Location = new System.Drawing.Point(1085, 2);
             this.btnExist.Name = "btnExist";
             this.btnExist.Size = new System.Drawing.Size(67, 36);
             this.btnExist.TabIndex = 15;
@@ -110,7 +110,7 @@
             this.btnLogOut.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.btnLogOut.ForeColor = System.Drawing.Color.Black;
             this.btnLogOut.Image = global::DoAn.Properties.Resources.logout;
-            this.btnLogOut.Location = new System.Drawing.Point(939, 6);
+            this.btnLogOut.Location = new System.Drawing.Point(924, 2);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(155, 30);
             this.btnLogOut.TabIndex = 14;
@@ -146,7 +146,7 @@
             this.btnStudentFees.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStudentFees.ForeColor = System.Drawing.Color.Black;
             this.btnStudentFees.Image = global::DoAn.Properties.Resources.Fees;
-            this.btnStudentFees.Location = new System.Drawing.Point(12, 301);
+            this.btnStudentFees.Location = new System.Drawing.Point(12, 405);
             this.btnStudentFees.Name = "btnStudentFees";
             this.btnStudentFees.Size = new System.Drawing.Size(180, 45);
             this.btnStudentFees.TabIndex = 6;
@@ -193,7 +193,7 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.Black;
             this.guna2Button1.Image = global::DoAn.Properties.Resources.new_student;
-            this.guna2Button1.Location = new System.Drawing.Point(-7, 395);
+            this.guna2Button1.Location = new System.Drawing.Point(-6, 308);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(221, 45);
             this.guna2Button1.TabIndex = 17;
@@ -223,7 +223,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.ClientSize = new System.Drawing.Size(1158, 674);
+            this.ClientSize = new System.Drawing.Size(1153, 697);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.btnManageStudents);

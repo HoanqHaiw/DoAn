@@ -47,7 +47,6 @@
             this.cbrooms = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
-            this.btnClean = new Guna.UI2.WinForms.Guna2Button();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
@@ -210,7 +209,7 @@
             this.txtEmployeeWork.PasswordChar = '\0';
             this.txtEmployeeWork.PlaceholderText = "";
             this.txtEmployeeWork.SelectedText = "";
-            this.txtEmployeeWork.Size = new System.Drawing.Size(246, 45);
+            this.txtEmployeeWork.Size = new System.Drawing.Size(334, 45);
             this.txtEmployeeWork.TabIndex = 15;
             // 
             // guna2DataGridView1
@@ -317,26 +316,6 @@
             this.btnExit.TabIndex = 25;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // btnClean
-            // 
-            this.btnClean.BorderRadius = 15;
-            this.btnClean.BorderThickness = 1;
-            this.btnClean.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnClean.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnClean.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnClean.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClean.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnClean.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClean.ForeColor = System.Drawing.Color.Black;
-            this.btnClean.Image = global::DoAn.Properties.Resources.clear;
-            this.btnClean.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnClean.Location = new System.Drawing.Point(781, 311);
-            this.btnClean.Name = "btnClean";
-            this.btnClean.Size = new System.Drawing.Size(108, 45);
-            this.btnClean.TabIndex = 24;
-            this.btnClean.Text = "Hoàn Tác";
-            this.btnClean.Click += new System.EventHandler(this.btnClean_Click);
-            // 
             // btnDelete
             // 
             this.btnDelete.BorderRadius = 15;
@@ -350,11 +329,12 @@
             this.btnDelete.ForeColor = System.Drawing.Color.Black;
             this.btnDelete.Image = global::DoAn.Properties.Resources.Update___Delete_Student;
             this.btnDelete.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDelete.Location = new System.Drawing.Point(653, 311);
+            this.btnDelete.Location = new System.Drawing.Point(781, 311);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(108, 45);
             this.btnDelete.TabIndex = 23;
-            this.btnDelete.Text = "Xóa";
+            this.btnDelete.Text = "Xem ";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -368,9 +348,9 @@
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.Black;
             this.btnUpdate.Image = global::DoAn.Properties.Resources.save;
-            this.btnUpdate.Location = new System.Drawing.Point(522, 311);
+            this.btnUpdate.Location = new System.Drawing.Point(620, 311);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(108, 45);
+            this.btnUpdate.Size = new System.Drawing.Size(138, 45);
             this.btnUpdate.TabIndex = 22;
             this.btnUpdate.Text = "Cập Nhật";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -385,7 +365,6 @@
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnClean);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtEmployeeWork);
@@ -426,7 +405,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtEmployeeWork;
         private Guna.UI2.WinForms.Guna2Button btnUpdate;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
-        private Guna.UI2.WinForms.Guna2Button btnClean;
         private Guna.UI2.WinForms.Guna2Button btnExit;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2Button btnSearch;

@@ -5,7 +5,7 @@ use hostel
 CREATE TABLE rooms (
 	roomNo BIGINT not null PRIMARY KEY, 
 	roomStatus VARCHAR(250) NOT NULL,
-	Booked VARCHAR(150) DEFAULT 'No'
+	Booked VARCHAR(150) DEFAULT 'NO'
 )
 
 
@@ -21,7 +21,7 @@ CREATE TABLE newStudent (
 	college VARCHAR(250) NOT NULL,
 	idproof VARCHAR(250) NOT NULL,
 	roomNo BIGINT NOT NULL,
-	living VARCHAR(250) DEFAULT 'Yes',
+	living VARCHAR(250) DEFAULT 'YES',
 	FOREIGN KEY (roomNo) REFERENCES rooms(roomNo)
 )
 

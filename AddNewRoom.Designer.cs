@@ -122,9 +122,9 @@
             this.checkBox1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.checkBox1.Location = new System.Drawing.Point(688, 81);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(56, 20);
+            this.checkBox1.Size = new System.Drawing.Size(46, 20);
             this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "YES";
+            this.checkBox1.Text = "Có";
             this.checkBox1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.checkBox1.UncheckedState.BorderRadius = 0;
             this.checkBox1.UncheckedState.BorderThickness = 0;
@@ -200,9 +200,9 @@
             this.checkBox2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.checkBox2.Location = new System.Drawing.Point(907, 221);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(56, 20);
+            this.checkBox2.Size = new System.Drawing.Size(46, 20);
             this.checkBox2.TabIndex = 14;
-            this.checkBox2.Text = "YES";
+            this.checkBox2.Text = "Có";
             this.checkBox2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.checkBox2.UncheckedState.BorderRadius = 0;
             this.checkBox2.UncheckedState.BorderThickness = 0;
